@@ -66,7 +66,7 @@ const DataTable=  ( {formData} ) =>{
                         // </tr>
                     ) )}
 
-                    <tr>
+                    {/* <tr>
                         <td colSpan={7} style={{padding:'17px'}}> 
                             <div className='' style={{display:'flex', justifyContent:'space-between'}}>
                                 <button onClick={()=> handlePageChange(currentPage-1)} disabled={currentPage === 1}>
@@ -78,9 +78,23 @@ const DataTable=  ( {formData} ) =>{
                                 </button>
                             </div>
                         </td>
-                    </tr> 
+                    </tr>  */}
                 </tbody>
             </table>
+
+            <div className='page-container'>
+                <div className='pagination'>
+                    <button className='btn1' onClick={()=> handlePageChange(currentPage-1)} disabled={currentPage === 1}> <img src='arrow.png'></img> Prev</button>
+                        <ul>
+                            <li className='link active' value='1' onClick={()=> handlePageChange(1)} disabled={currentPage === 1}>1</li>
+                            <li className='link' value='2' onClick={()=> handlePageChange(2)} disabled={currentPage === 2}>2</li>
+                            <li className='link' value='3' onClick={()=> handlePageChange(3)} disabled={currentPage === 3}>3</li>
+                            <li className='link' value='4' onClick={()=> handlePageChange(4)} disabled={currentPage === 4}>4</li>
+                            <li className='link' value='6' onClick={()=> handlePageChange(5)} disabled={currentPage === 5}>5</li>
+                        </ul>
+                    <button className='btn2' onClick={()=> handlePageChange(currentPage+1)} disabled = {endIndex>=formData.length}> <img src='arrow.png'></img>Next </button>
+                </div>
+            </div>
         
         </div>
     )
