@@ -7,12 +7,7 @@ import Form from './components/Form'
 function App() {
   return (
     <div className="App">
-     
-      <Header />
-      <div style={{ width:'100%'}} >
-      <div className=' Adiv1'>Welcome Remy sharp</div>
       <Form />
-      </div>
     </div>
   );
 }

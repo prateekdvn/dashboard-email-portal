@@ -21,7 +21,7 @@ import Button from '@mui/material/Button';
 // import logo from "../public/next.svg"
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
-
+import Header from "./Header";
 import vector from '../images/Vector.svg';
 import vector2 from '../images/Vector2.svg';
 import group1 from '../images/Group 2683.svg';
@@ -69,7 +69,13 @@ setCurrentItem(e.currentTarget.value)
       setAnchorElUser(null);
     };
     return <>
+
     <div>
+      
+      <Header />
+      <div style={{ width:'100%'}} >
+      <div className=' Adiv1'>Welcome Remy sharp</div>
+         
          <div className='Adiv2'>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', lg: 'none' } }} >
             <IconButton
@@ -144,7 +150,7 @@ setCurrentItem(e.currentTarget.value)
           
           
           </div>
-
+      </div>
 
 
     </div></>

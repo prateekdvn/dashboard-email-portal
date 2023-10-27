@@ -200,8 +200,6 @@ ul li.active {
   border: 1px solid #e9ecef;
   border-radius: 5px;
   background-color: white;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 
 .register span{

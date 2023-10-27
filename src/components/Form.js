@@ -1,7 +1,8 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import Nav from './Nav2';
-import bgImp from '../images/first.png';
+import bgImp from '../images/bckrnd.png';
+import Header from './Header';
 
 export default function Form() {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -17,6 +18,9 @@ export default function Form() {
     minHeight: '100vh',
   };
 
+  // <Header />
+  // <div style={{ width:'100%'}} >
+  // <div className=' Adiv1'>Welcome Remy sharp</div>
   return (
     <section>
       <div style={containerStyle} className="register">
