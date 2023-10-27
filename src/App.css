@@ -1,4 +1,3 @@
-
 .col-6 .row {
   display: flex;
   flex-direction: row;
@@ -196,4 +195,66 @@ ul li.active {
   background: #580599;
 }
 
+.register{
+  display:flex;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  background-color: white;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 
+.register span{
+  color: #adb5bd;
+}
+
+#form{
+  max-width: 320px;
+  width: 100vw;
+  margin: 2em auto;
+}
+
+#form >  input, .btn{
+  border: 1px solid #e9ecef;
+  padding: .9em 1em;
+}
+
+#form > input:focus{
+  outline: none;
+}
+
+#form > .btn{
+  background-color: #003049;
+  color: #e9ecef;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.flex{
+  display: flex;
+  gap: 1em;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.register .col-1{
+  margin: auto;
+  padding: 3em 0;
+}
+
+.register .col-2 img{
+  display: flex;
+  width: 1000px;
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media screen and (min-width: 860px)  {
+  .register .col-2 img{
+    display: initial;
+  }
+}
