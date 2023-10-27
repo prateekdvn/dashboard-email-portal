@@ -200,6 +200,8 @@ ul li.active {
   border: 1px solid #e9ecef;
   border-radius: 5px;
   background-color: white;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .register span{
@@ -244,9 +246,9 @@ ul li.active {
 
 .register .col-2 img{
   display: flex;
-  width: 1000px;
   height: 100%;
   object-fit: cover;
+  background-size: cover;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
